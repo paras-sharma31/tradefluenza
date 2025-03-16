@@ -1,6 +1,6 @@
 import { Button } from "@/components/registry/new-york/ui/button";
 import { Input } from "@/components/registry/new-york/ui/input";
-import { Send, Mic, AudioLines } from "lucide-react";
+import { Send, AudioLines } from "lucide-react";
 
 const ChatInput = ({
   input,

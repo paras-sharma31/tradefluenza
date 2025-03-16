@@ -40,8 +40,9 @@ export function CardsChat({ setOpen }: { setOpen: (open: boolean) => void }) {
       } else {
         setMessages((prev) => [...prev, { role: "model", content: "Sorry, I didn't understand that." }]);
       }
-    } catch (error) {
+    } catch (error: any) {
       setMessages((prev) => [...prev, { role: "model", content: "Something went wrong. Try again later." }]);
+      console.log(error)
     }
 
     setLoading(false);

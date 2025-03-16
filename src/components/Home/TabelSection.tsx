@@ -1,9 +1,6 @@
 import React from 'react';
-import Button from '../Common/Button';
 import { Check, CheckIcon, ChevronRightIcon } from 'lucide-react';
 import { tableData } from '@/lib/const';
-import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
-import { ShinyButton } from '../magicui/shiny-button';
 import { AnimatedSubscribeButton } from '../magicui/animated-subscribe-button';
 
 
