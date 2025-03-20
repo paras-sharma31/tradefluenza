@@ -1,3 +1,4 @@
+'use client'
 import Main from "@/components/Home/Main";
 import { Suspense } from "react";
 

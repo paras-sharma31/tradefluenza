@@ -22,7 +22,7 @@ export default function Header() {
             <div>
                 <Link href="/">
                     <p>
-                        <Image src="/images/tarde-logo.png" alt="logo"  width={12} height={12} />
+                        <Image src="/images/tarde-logo.png" alt="logo"  width={200} height={100} />
                     </p>
                 </Link>
             </div>
