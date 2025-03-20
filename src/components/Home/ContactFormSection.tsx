@@ -1,15 +1,18 @@
-'use client'
 import HeadingComponent from "../Common/Heading-Component";
 import InputField, { RadioField } from "../Common/Input-Field";
-import Select from 'react-select'
 import React, { useEffect } from "react";
 import { fetchStates } from "@/services/Services";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
+import dynamic from "next/dynamic";
+const Select = dynamic(() => import("react-select"), { ssr: false });
+
+
 
 
 export default function ContactFormSection() {
     const [options, setOptions] = React.useState([])
+
     useEffect(() => {
         try {
             fetchStates().then((data) => {
