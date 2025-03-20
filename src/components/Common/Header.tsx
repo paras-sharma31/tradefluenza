@@ -7,7 +7,7 @@ export default function Header() {
         { name: "Bootcamp", href: "/" },
         { name: "MasterClass", href: "/" },
         { name: "Features", href: "/products" },
-        { name: "Modules", href: "/about" }
+        { name: "Modules", href: "/about" },
     ]
     return (
         <>
