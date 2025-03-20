@@ -1,11 +1,9 @@
 'use client'
-import { b } from "motion/react-client";
 import HeadingComponent from "../Common/Heading-Component";
 import InputField, { RadioField } from "../Common/Input-Field";
 import Select from 'react-select'
 import React, { useEffect } from "react";
 import { fetchStates } from "@/services/Services";
-import Button from "../Common/Button";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 
@@ -18,6 +16,7 @@ export default function ContactFormSection() {
                 setOptions(data.map((state: any) => ({ value: state, label: state })))
             })
         } catch (error) {
+            console.error(error)
         }
     }, [])
 

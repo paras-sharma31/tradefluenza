@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
             <div>
                 <Link href="/">
                     <p>
-                        <img src="/images/tarde-logo.png" alt="logo" className="h-12" />
+                        <Image src="/images/tarde-logo.png" alt="logo"  width={12} height={12} />
                     </p>
                 </Link>
             </div>

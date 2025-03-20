@@ -16,7 +16,7 @@ const ChatMessages = ({ messages, loading }: { messages: any[]; loading: boolean
     utterance.onstart = () => setCurrentSpeakingIndex(index);
     utterance.onend = () => setCurrentSpeakingIndex(null);
     window.speechSynthesis.speak(utterance);
-      // utteranceRef.current = utterance;
+    // utteranceRef?.current = utterance;
   };
 
   const stopSpeaking = () => {

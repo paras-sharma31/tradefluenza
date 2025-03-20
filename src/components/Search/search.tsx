@@ -19,7 +19,7 @@ export default function SearchPage({ back }: { back: () => void }) {
     }, 300)
 
     return () => clearTimeout(delayDebounceFn)
-  }, [query])
+  }, )
 
   const handleSearch = async () => {
     if (query.length < 3) {

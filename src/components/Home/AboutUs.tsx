@@ -36,7 +36,7 @@ export default function AboutUs() {
                     <div className="absolute inset-0 bg-[#000000c7]"></div>
                 </div>
                     <HeadingComponent className="text-[80px] font-normal leading-[70px] text-white">
-                        OUR <span className="text-[#ff5900]">TRADER'S <br />
+                        OUR <span className="text-[#ff5900]">TRADERS <br />
                             COMMUNITY</span>
                     </HeadingComponent>
                     <ul className="text-[16px] font-normal text-white">

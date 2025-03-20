@@ -6,7 +6,7 @@ export default function BannerSection() {
     <div>
       <HeadingComponent className="text-[#ff5900] leading-[130px]">
         <TypingAnimation startOnView={true} className="text-[140px] font-medium">
-            INDIA'S LARGEST
+            INDIA&apos;S LARGEST
         </TypingAnimation>
           <>
             <p className="text-white">STOCK TRADING COMMUNITY</p>

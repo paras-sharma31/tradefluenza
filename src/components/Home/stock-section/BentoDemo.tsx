@@ -1,14 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import {  useSearchParams } from "next/navigation"
 import StockDetails from "@/components/Stock-Details"
-import type { Stock, StockSearchResult } from "@/lib/types"
+import type { Stock } from "@/lib/types"
 import { fetchStockData, searchStocks } from "@/lib/api"
 import SearchPage from "@/components/Search/search"
 
 export default function Home() {
-  const router = useRouter()
   const searchParams = useSearchParams() 
   const symbol = searchParams.get("symbol")
 
@@ -22,7 +21,7 @@ export default function Home() {
         if (symbol) {
           const stockData = await searchStocks(symbol)
           if (stockData.length > 0) {
-            setStock(stockData[0]) 
+            // setStock(stockData[0]) 
           }
         } else {
           const defaultStock = await fetchStockData("ITC") 
